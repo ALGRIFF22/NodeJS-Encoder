@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Om-Coder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <div class="output">
+            <label for="output">output: </label>
+            <input type="text" id="output" name="output" placeholder="C:\output\file\path\..." readonly> 
+        </div>
+        <div class="videoCount">   
+                <label for="videoCount">video count: </label>
+                <input type="number" id="videoCount" name="videoCount" placeholder="1" > 
+                <button onclick="removeRow()" class="headerButton minusButton">-</button>
+                <button onclick="addRow()" class="headerButton plusButton">+</button>
+        </div>
+        <div class="loadedSettings" >  
+            <label for="loadedSettings">loaded settings: </label>
+            <input type="text" id="loadedSettings" name="loadedSettings" placeholder="no setings loaded..." readonly> 
+        </div>
+    </header>
+    <div class="content">
+        <table class="table" id="my-table">
+            <tr>
+                <th>video format</th>
+                <th>width</th>
+                <th>height</th>
+                <th>fps</th>
+                <th>video bitrate</th>
+            </tr>
+            <tr id="table-row">
+                <td>
+                    <select id="videoFormatDropdown" class="dropdown">
+                        <option value="H.264">H.264</option>
+                        <option value="ProRes">ProRes</option>
+                        <option value="DNxHD">DNxHD</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="width" placeholder="Width in pixels..">
+                </td>
+                <td>
+                    <input type="number" id="height" placeholder="Height in pixels..">
+                </td>
+                <td>
+                   <select id="fpsDropdown" class="dropdown">
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                        <option value="23.976">23.976</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="29.97">29.97</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="59.94">59.94</option>
+                        <option value="60">60</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="videoBitrate" name="search" placeholder="Video bitrate..">
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <footer class="footer">
+        <img class="resize" src="images/omstudios_logo_2015_ohne_Text.jpg">
+        <button class="button saveSettingsButton">Save settings...</button>
+        <button class="button loadSettingsButton">Load settings...</button>
+        <button onclick="loadDefault()" class="button loadSettingsButton">Load Default</button>
+    </footer>
+    </div>
+    <script src="scripts/webpage.js"></script>
+</body>
+</html>

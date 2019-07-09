@@ -1,0 +1,14 @@
+{
+    "output": "P:/_autoEncoderOutput/",
+    "videoCount":"1",
+    "videos":{
+        "table-row" :{
+            "videoFormat":"H.264",
+            "width":"1920", 
+            "height":"1080", 
+            "fps":"25", 
+            "videoBitrate":"10000"
+        }
+       
+    }
+}

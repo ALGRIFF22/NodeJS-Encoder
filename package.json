@@ -1,0 +1,36 @@
+{
+  "name": "nodejs_encoder",
+  "version": "1.0.0",
+  "description": "watch's a folder and will encode videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon run.js",
+    "slack": "nodemon slackControl.js",
+    "server": "nodemon server.js",
+    "table": "nodemon P:/_temp/Alex/Other_Projects/nodejs_encoder/html/public/scripts/webpage.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/OM_Alex/nodejs_encoder.git"
+  },
+  "author": "Alex Griffiths",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/OM_Alex/nodejs_encoder/issues"
+  },
+  "homepage": "https://gitlab.com/OM_Alex/nodejs_encoder#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "@slack/events-api": "^2.2.0",
+    "@slack/web-api": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "color-between": "^1.0.2",
+    "express": "^4.16.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "request": "^2.88.0",
+    "system-sleep": "^1.3.6"
+  }
+}

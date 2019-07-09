@@ -1,0 +1,9 @@
+{
+    "input": "P:/_temp/Alex/Other_Projects/nodejs_encoder/input/",
+    "output": "C:/Users/alex.griffiths/Desktop/om_coder_output/",
+    "fps" : "25",
+    "bitRate": "10000",
+    "videoFormat" : "mp4",
+    "resolutions" : ["1920x1080", "640x360", "640x480"]
+
+}
